@@ -1,6 +1,6 @@
 # Site settings
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://victor.moe" # the base hostname & protocol for your site
+url: "http://htm.victor.moe" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
@@ -10,12 +10,12 @@ gems:
 
 # Metadata
 keywords: "Hello world, boilerplate"
-google-fonts: "BioRhyme:400,800|Source+Sans+Pro:400,700"
+google-fonts: ""
 google-fonts-subsets: "latin"
 google-analytics: "UA-XXXXXXXX-1"
 
 # Commonly used lingo
-title: "Cutie"
+title: "HACKS the Musical"
 location: "Philadelphia, PA, USA"
 email: contact@example.com
 description: > # this means to ignore newlines until the next colon

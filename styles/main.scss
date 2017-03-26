@@ -5,10 +5,10 @@
 
 // Our variables
 $base-font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-size:   18px;
 $base-line-height: 1.65;
 
-$title-font-family: "BioRhyme", "Source Sans Pro", Helvetica, Arial, sans-serif;
+$title-font-family: "Source Sans Pro", "Source Sans Pro", Helvetica, Arial, sans-serif;
 $heading-font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
 $accent-font-family: "Georgia", $base-font-family;
 
@@ -24,7 +24,7 @@ $on-palm:          600px;
 $on-laptop:        800px;
 
 // Color pallete
-$primary:          #2A68D1;
+$primary:          #6c36c3;
 $primary-lighter:  lighten($primary, 15%);
 $primary-darker:   darken($primary, 15%);;
 $secondary:        #FF5234;
@@ -66,5 +66,6 @@ $icomoon-font-path: "../icons/fonts";
   "forms",
   "iconsvars",
   "icons",
-  "site"
+  "site",
+  "_home"
 ;

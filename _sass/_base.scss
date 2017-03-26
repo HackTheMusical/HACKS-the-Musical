@@ -92,8 +92,7 @@ li {
 // Headings
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font-family;
-  // margin: .15em 0;
-  // font-weight: 700;
+  margin: .25em 0;
   font-weight: bold;
   line-height: 1em;
   color: inherit;
@@ -112,23 +111,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   font-family: $title-font-family;
-  font-weight: 400;
   font-size: 48px;
-  line-height: 1.5em;
-  // margin: 0.35em auto;
-  // font-weight: 900;
 }
 h2 {
   font-size: 36px;
-  // margin: .8em auto;
-  // font-weight: 700;
 }
 h3 {
   font-size: 30px;
   // margin: .5em auto;
-  // font-weight: 700;
 }
-
 // Links
 a {
   display: inline-block;
@@ -145,13 +136,13 @@ a {
 
 // Paragraph
 .lead, p.lead {
-  font-size: 1.65em;
+  font-size: 1.5em;
   line-height: 1.5em;
   font-family: $heading-font-family;
 }
 .leader, p.leader {
   margin-top: 1em;
-  font-size: 2.5em;
+  font-size: 2.25em;
 }
 
 // Blockquotes
