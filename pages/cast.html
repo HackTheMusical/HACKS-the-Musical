@@ -1,0 +1,19 @@
+---
+layout: page
+title: Meet the Cast
+permalink: /cast/
+---
+
+{% for person in site.data.cast %}
+  <div class="person" id="{{ person.name | slugify }}">
+    <div class="avatar" style="background-image:url({{ site.baseurl }}/{{ person.avatar }});"></div>
+    <h2>{{ person.name }}  {% if person.aka %}<small>{{ person.aka }}</small>{% endif %}</h2>
+    <p>{{ person.bio }}</p>
+    <p class="person-links">
+     {% if person.website %}<icon class="icon-explore"></icon> <a href="{{ person.website }}" target="_blank">{{ person.website }}<icon class="icon-right"></icon></a>{% endif %}
+     {% if person.youtube %}<icon class="icon-youtube"></icon> <a href="{{ person.youtube }}" target="_blank" class="link-youtube">{{ person.youtube }}<icon class="icon-right"></icon></a>{% endif %}
+     {% if person.facebook %}<icon class="icon-facebook"></icon> <a href="{{ person.facebook }}" target="_blank" class="link-facebook">{{ person.facebook }}<icon class="icon-right"></icon></a>{% endif %}
+     {% if person.twitter %}<a href="https://twitter.com/intent/follow?screen_name={{ person.twitter }}" target="_blank" class="twitter-button"><icon class="icon-twitter"></icon> Follow @{{ person.twitter }}</a>{% endif %}
+    </p>
+  </div>
+{% endfor %}

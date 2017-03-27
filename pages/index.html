@@ -8,52 +8,48 @@ class: page-home
 <header id="welcome" class="mega-card">
 
   <container>
-    <row>
-      <column size="40">
-        <div class="intro">
-          <h1>Header</h1>
-          <p class="lead">
-            Content
-          </p>
-          <a href="#" class="button">Foobar <icon class="icon-up-right"></icon></a>
-        </div>
-      </column>
-      <column size="60"></column>
-    </row>
+    <h1>Introducing HACKS the Musical</h1>
+    <p class="lead">Starring Tristan Wiley &amp; Co</p>
   </container>
 
 </header>
-<section id="example">
-
-  <container>
-    <h1>Section Header</h1>
-    <p>Section content goes here.</p>
-  </container>
-
-</section>
-<header id="welcome" class="mega-card">
+<section id="cast">
 
   <container>
     <row>
-      <column size="40">
-        <div class="intro">
-          <h1>Section Header</h1>
-          <p class="lead">
-            Section content goes here.
-          </p>
-          <a href="#" class="button">Foobar <icon class="icon-up-right"></icon></a>
-        </div>
+      <column>
+        <h1>Starring...</h1>
+        <br>
+        <rows class="person-embed-list">
+
+          {% for person in site.data.cast limit:10 %}
+             <a class="person person-vip person-embed column" href="{{ site.baseurl }}/cast#{{ person.name | slugify }}" size="33">
+               <div class="avatar" style="background-image:url({{ site.baseurl }}/{{ person.avatar }});"></div>
+               <h3>{{ person.name }}<br><small>{{ person.aka }}</small></h3>
+             </a>
+          {% endfor %}
+
+        </rows>
+        <a href="{{ site.baseurl }}/cast"class="button">More Cast Members <icon class="icon-right"></icon></a>
       </column>
-      <column size="60"></column>
+      <column>
+        <h1>Help Us!</h1>
+        <br>
+        <p><b>We are only getting started.</b> HACKS the Musical is looking for volunteers to get involved. We are filming at MHacks 10.</p>
+        <ul class="post-list">
+          {% for post in site.posts limit:4 %}
+            <li>
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+              <h3>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h3>
+            </li>
+          {% endfor %}
+        </ul>
+        <a href="{{ site.baseurl }}/get-involved" class="button">Get Involved <icon class="icon-right"></icon></a>
+      </column>
     </row>
-  </container>
-
-</header>
-<section id="example">
-
-  <container>
-    <h1>Section Header</h1>
-    <p>Section content goes here.</p>
   </container>
 
 </section>

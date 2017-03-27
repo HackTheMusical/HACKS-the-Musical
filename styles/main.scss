@@ -4,12 +4,12 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-$base-font-size:   18px;
+$base-font-family: "Alegreya", Helvetica, Arial, sans-serif;
+$base-font-size:   20px;
 $base-line-height: 1.65;
 
-$title-font-family: "Source Sans Pro", "Source Sans Pro", Helvetica, Arial, sans-serif;
-$heading-font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+$title-font-family: "Playfair Display", "Source Sans Pro", Helvetica, Arial, sans-serif;
+$heading-font-family: "Playfair Display", Helvetica, Arial, sans-serif;
 $accent-font-family: "Georgia", $base-font-family;
 
 $small-font-size:  $base-font-size * 0.875;
@@ -24,10 +24,10 @@ $on-palm:          600px;
 $on-laptop:        800px;
 
 // Color pallete
-$primary:          #6c36c3;
+$primary:          #795548;
 $primary-lighter:  lighten($primary, 15%);
 $primary-darker:   darken($primary, 15%);;
-$secondary:        #FF5234;
+$secondary:        gold;
 $secondary-lighter:lighten($secondary, 15%);
 $secondary-darker: darken($secondary, 15%);
 
@@ -35,9 +35,9 @@ $red:              #F44336;
 $white:            #ffffff;
 $black:            #3c3836;
 
-$text-color:       $black;
-$background-color: $white;
-$brand-color:      $primary;
+$text-color:       $white;
+$background-color: $primary;
+$brand-color:      $white;
 
 $gray:       #828282;
 $gray-light: lighten($gray, 40%);
@@ -66,6 +66,5 @@ $icomoon-font-path: "../icons/fonts";
   "forms",
   "iconsvars",
   "icons",
-  "site",
-  "_home"
+  "site"
 ;

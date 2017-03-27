@@ -25,7 +25,7 @@ body {
   line-height: $base-line-height;
   font-weight: normal;
   color: $text-color;
-  background-color: white; // $background-color;
+  background-color: $background-color; // $background-color;
   -webkit-text-size-adjust: 100%;
   background-attachment: fixed;
   background-size: cover;
@@ -192,6 +192,7 @@ header {
   p {
     max-width: 100%;
   }
+  text-align: center;
 }
 
 // Sections
@@ -235,9 +236,10 @@ section {
 
 // Buttons
 .button {
-  background: $brand-color;
-  color: white!important;
-  display: inline-block;
+  background: $secondary;
+  // color: white!important;
+  color: $black!important;
+  // display: inline-block;
   font-family: $base-font-family;
   font-size: $base-font-size;
   padding: .5em 1em;
@@ -249,6 +251,9 @@ section {
   border: none;
   outline: none;
   text-shadow: none;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0,0,0,.25);
+  transition: 150ms all ease;
   &-large {
     font-size: $base-font-size * 1.25;
     @include media-query($on-palm) {
@@ -256,15 +261,35 @@ section {
     }
   }
   &:hover, &:focus, &:active {
-    background: darken($brand-color, 10%);
+    background: $secondary-lighter;
     text-decoration: none;
   }
   &:active {
-    box-shadow: inset 0 0 20px rgba(0,0,0,.5);
+    background: $secondary-darker;
+    box-shadow: inset 0 0 8px rgba(0,0,0,.5);
   }
   &:disabled, &-disabled {
     opacity: .5;
     pointer-events: none;
+  }
+  &:after {
+    position: absolute;
+    content: '';
+    border: 2px solid gold;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: 300ms all ease;
+  }
+  &:hover:after, &:focus:after {
+    top: -8px;
+    left: -8px;
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
+    border-radius: 8px;
   }
 }
 

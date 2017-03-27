@@ -6,13 +6,13 @@ Built with Jekyll (for now) and hosted on GitHub Pages (for now).
 
 | Directory |  |
 | --- | --- |
-| ````_data/```` | Datafiles for guests and vendors. |
+| ````_data/```` | Datafiles for casts and vendors. |
 | ````_drafts/```` | Unpublished blog posts. |
 | ````_posts/```` | Blog posts. |
 | ````pages/```` | Actual site content. |
 | ````media/```` | Images, pdfs, and other misc static content. |
 
-### Guests
+### Cast
 
 Just add a bullet to the corresponding .yaml file and the site will automatically update.
 
@@ -23,15 +23,14 @@ Just add a bullet to the corresponding .yaml file and the site will automaticall
   type: community # Community or Vip
   # Usernames
   twitter: "Fluffle_Puff"
-  deviantart: "flufflepuff"
-  tumblr: "askflufflepuff"
+  facebook: "flufflepuff"
   # Links
   youtube: "https://www.youtube.com/user/FluffyMixer"
   website: "http://askflufflepuff.com"
   # Biography
   bio: "Basement dweller ♥ Food eater Internet user ♥ Part-time bear."
   # Images
-  avatar: "/media/guests/flufflepuff-avatar.png" # Absolute path to avatar
+  avatar: "/media/flufflepuff-avatar.png" # Absolute path to avatar
   cover: "" # may be used in the future
   # Color
   color: "" # may be used in the future
@@ -67,7 +66,7 @@ Below are your headers, use them sparingly.
 
 Images are pretty easy.
 
-![Image description for screen readers go here: Fluffle Puff!](/media/guests/flufflepuff-avatar.png)
+![Image description for screen readers go here: Fluffle Puff!](/media/flufflepuff-avatar.png)
 
 So are links: [Click here for Google!](http://google.com/)
 
@@ -102,11 +101,10 @@ Like posts, but also supports markdown ````.md```` or html ````.html````. I recc
 ````markdown
 ---
 layout: page # page (default) or blank (have to manually define container and content areas)
-title: Philadelphia
-subtitle: A guide to the City of Brother Love! # optional
-permalink: /philly/
-redirect_from: /philadelphia/ # optional if you are redireccting from an old url
-cover: # may be used in the future
+title: Meet the Cast
+subtitle: Learn more about the lovely cast! # optional
+permalink: /cast/
+redirect_from: /people/ # optional if you are redireccting from an old url
 ---
 
 Start typing content here!
