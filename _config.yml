@@ -10,7 +10,7 @@ gems:
 
 # Metadata
 keywords: "musical, hackathon"
-google-fonts: ""
+google-fonts: "Alegreya:400,700|Playfair+Display:400,400i,700"
 google-fonts-subsets: "latin"
 google-analytics: "UA-XXXXXXXX-1"
 
